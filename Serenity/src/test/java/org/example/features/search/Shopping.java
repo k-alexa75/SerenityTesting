@@ -21,15 +21,15 @@ public class Shopping {
 
     @Test
     public void shoppingTest() {
-        shoppingSteps.is_the_home_page();
-        shoppingSteps.add_to_cart_element1();
-        shoppingSteps.continue_shopping();
-        shoppingSteps.add_to_cart_element2();
-        shoppingSteps.view_Cart();
+        shoppingSteps.goToHomePage();
+        shoppingSteps.addToCartElement1();
+        shoppingSteps.continueShopping();
+        shoppingSteps.addToCartElement2();
+        shoppingSteps.viewCart();
 
-        shoppingSteps.click_ProceedToCheckout();
-        shoppingSteps.type_Email();
-        shoppingSteps.click_CreateAccount();
+        shoppingSteps.clickProceedToCheckout();
+        shoppingSteps.typeEmail();
+        shoppingSteps.clickCreateAccount();
         shoppingSteps.register();
 
         shoppingSteps.goToShipping();

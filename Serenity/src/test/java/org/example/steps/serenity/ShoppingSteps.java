@@ -7,42 +7,42 @@ public class ShoppingSteps {
     ShoppingPage shoppingPage;
 
     @Step
-    public void is_the_home_page() {
+    public void goToHomePage() {
         shoppingPage.open();
     }
 
     @Step
-    public void add_to_cart_element1() {
+    public void addToCartElement1() {
         shoppingPage.clickAddToCartElement(shoppingPage.getElement1());
     }
 
     @Step
-    public void continue_shopping() {
+    public void continueShopping() {
         shoppingPage.clickToContinueShopping();
     }
 
     @Step
-    public void add_to_cart_element2() {
+    public void addToCartElement2() {
         shoppingPage.clickAddToCartElement(shoppingPage.getElement2());
     }
 
     @Step
-    public void view_Cart() {
+    public void viewCart() {
         shoppingPage.viewCart();
     }
 
     @Step
-    public void click_ProceedToCheckout() {
+    public void clickProceedToCheckout() {
         shoppingPage.clickToProceedToCheckout();
     }
 
     @Step
-    public void type_Email() {
+    public void typeEmail() {
         shoppingPage.enterEmail("inkypixel34@gmail.com");
     }
 
     @Step
-    public void click_CreateAccount() {
+    public void clickCreateAccount() {
         shoppingPage.clickCreateAccount();
     }
 
