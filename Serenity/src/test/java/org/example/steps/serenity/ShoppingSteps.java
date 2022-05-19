@@ -3,6 +3,10 @@ package org.example.steps.serenity;
 import net.thucydides.core.annotations.Step;
 import org.example.pages.ShoppingPage;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
 public class ShoppingSteps {
     ShoppingPage shoppingPage;
 
@@ -38,7 +42,13 @@ public class ShoppingSteps {
 
     @Step
     public void typeEmail() {
-        shoppingPage.enterEmail("inkypixel34@gmail.com");
+        try {
+            Scanner sc = new Scanner(new File("D:\\UBB\\SEMESTRUL_VI\\VerificareaSiValidareaSistemelorSoft\\SerenityTesting\\Serenity\\src\\test\\resources\\data.csv"));
+            shoppingPage.enterEmail(sc.next());
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
     }
 
     @Step

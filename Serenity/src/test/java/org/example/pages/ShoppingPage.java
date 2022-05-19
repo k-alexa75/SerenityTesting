@@ -113,7 +113,7 @@ public class ShoppingPage extends PageObject {
         proceedToCheckout.click();
     }
 
-    public void click_Checkout() {
+    public void clickCheckout() {
         checkout.click();
     }
 
